@@ -6,7 +6,7 @@ import com.googlecode.objectify.annotation.Id;
 @Entity
 public class EtabInfo {
     @Id
-    public Long id;
+    public Integer id;
 
     public String name;
     public String email;

@@ -27,6 +27,15 @@
         <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
     </filter>
 
+    <servlet>
+        <servlet-name>whois</servlet-name>
+        <servlet-class>com.fem.WhoIsClientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>whois</servlet-name>
+        <url-pattern>/whois</url-pattern>
+    </servlet-mapping>
+
     <filter-mapping>
         <filter-name>ObjectifyFilter</filter-name>
         <url-pattern>/*</url-pattern>

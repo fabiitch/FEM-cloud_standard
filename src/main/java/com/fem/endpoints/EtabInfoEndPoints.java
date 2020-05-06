@@ -13,13 +13,12 @@ public class EtabInfoEndPoints {
 
     @ApiMethod(path = "test", httpMethod = ApiMethod.HttpMethod.GET)
     public EtabInfo test() {
-        System.out.println("tototoot");
-        System.out.println("tototoot");
         EtabInfo etab = new EtabInfo();
-        etab.id = Long.valueOf(1);
-        etab.name="kebab test";
-        etab.email ="toot@toto.com";
-        etab.type ="kebab";
+        etab.id = Integer.valueOf(1);
+
+        etab.name = "kebab test";
+        etab.email = "toot@toto.com";
+        etab.type = "kebab";
         return etab;
     }
 
