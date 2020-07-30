@@ -1,4 +1,4 @@
-package com.fem;
+package com.fem.socket;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -7,6 +7,7 @@ import java.io.Writer;
 import java.net.Socket;
 import java.util.logging.Logger;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
 import org.jsoup.Jsoup;
@@ -17,6 +18,10 @@ import org.jsoup.safety.Whitelist;
  * for domains that contain the string "google.com".
  **/
 @SuppressWarnings("serial")
+@WebServlet(
+        name = "WhoIsClientServlet",
+        urlPatterns = {"/whois"}
+)
 public class WhoIsClientServlet extends HttpServlet {
 
     private static final Logger log = Logger.getLogger(WhoIsClientServlet.class.getName());

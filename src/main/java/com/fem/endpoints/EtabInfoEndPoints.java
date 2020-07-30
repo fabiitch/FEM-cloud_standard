@@ -14,15 +14,14 @@ public class EtabInfoEndPoints {
     @ApiMethod(path = "test", httpMethod = ApiMethod.HttpMethod.GET)
     public EtabInfo test() {
         EtabInfo etab = new EtabInfo();
-        etab.id = Integer.valueOf(1);
-
+        etab.id = 12345;
         etab.name = "kebab test";
         etab.email = "toot@toto.com";
         etab.type = "kebab";
         return etab;
     }
 
-    @ApiMethod(path = "etab/get", httpMethod = ApiMethod.HttpMethod.GET)
+    @ApiMethod(path = "get", httpMethod = ApiMethod.HttpMethod.GET)
     public EtabInfo getAccount(@Named("id") long id) {
         ObjectifyLoader.loadEntity();
         System.out.println("recherche");

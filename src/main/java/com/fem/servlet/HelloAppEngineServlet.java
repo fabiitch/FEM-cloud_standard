@@ -1,4 +1,4 @@
-package com.fem;
+package com.fem.servlet;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
     name = "HelloAppEngine",
     urlPatterns = {"/hello"}
 )
-public class HelloAppEngine extends HttpServlet {
+public class HelloAppEngineServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) 
