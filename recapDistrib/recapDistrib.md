@@ -4,7 +4,7 @@
 | Menu API     |                 Action           |Uber| JustEat | Deliveroo |    commentaire     | url |
 | :---: |:---------------------------------------:| :-------:|:------: |:---------:|:-----------|:------------|
 | 1     |      Get Store Details                  | X |    -    |     -     |       -     |          -     |
-| 2     |      Get All Menu                       | X | X |     -     |       -     |          -     |
+| 2     |      Get All Menu                       | X | X       |     -     |       -     |          -     |
 | 2     |      Upload Menu                        | X |    -    |     -     |       -     |          -     |
 | 2     |      Update Item                        | X |    -    |     -     |       -     |          -     |
 | 2     |      Get Restaurant Status              | X |    -    |     -     |       -     |   
