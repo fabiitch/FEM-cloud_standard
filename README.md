@@ -1,4 +1,4 @@
-- url endpoints
+#dev url 
 http://localhost:8080/fem/api/etab/v1/test
 
 - console admin 
@@ -12,3 +12,13 @@ gcloud beta auth application-default login
 start emulateur :gcloud beta emulators datastore start
 
 Datastore : http://localhost:8081    
+
+
+
+
+# Partner API
+- Uber eats : https://developer.uber.com/docs/eats/introduction
+
+- Just Eat : https://uk.api.just-eat.io/docs
+
+- Deliveroo : https://developers
