@@ -32,6 +32,12 @@ public class EtabInfoEndPoints {
         } else {
             System.out.println("account found");
         }
+
+        etab = new EtabInfo();
+        etab.id = 6554;
+        etab.name = "kebab ggg";
+        etab.email = "toot@toto.com";
+        etab.type = "kebab";
         return etab;
     }
 

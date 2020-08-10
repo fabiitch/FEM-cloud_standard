@@ -12,9 +12,8 @@ public class DataStoreTest {
 
     @Test
     public void testLocal() throws IOException, InterruptedException {
-        Datastore ds = DatastoreOptions.newBuilder().setHost("http://localhost:8080").setProjectId("my-project").build().getService();
-        Key key = ds.newKeyFactory().setKind("MyEntity").newKey("mykey");
-//        Entity entity = Entity.builder(key).set("p1", "Hello World!").build();
+        Datastore ds = DatastoreOptions.newBuilder().setHost("http://localhost:8081").setProjectId("testfem-9158a").build().getService();
+        Key key = ds.newKeyFactory().setNamespace("testNamespace").setKind("MyEntity").newKey("mykey");
         Entity entity= Entity.newBuilder(key).set("p1", "Hello World!").build();
         entity = ds.put(entity);
         entity = ds.get(key);
