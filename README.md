@@ -15,7 +15,6 @@ Datastore : http://localhost:8081
 
 
 
-
 # Partner API
 - Uber eats : https://developer.uber.com/docs/eats/introduction
 

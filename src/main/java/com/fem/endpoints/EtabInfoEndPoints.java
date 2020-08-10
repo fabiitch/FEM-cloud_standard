@@ -14,7 +14,7 @@ public class EtabInfoEndPoints {
     @ApiMethod(path = "test", httpMethod = ApiMethod.HttpMethod.GET)
     public EtabInfo test() {
         EtabInfo etab = new EtabInfo();
-        etab.id = 12345;
+        etab.id = new Long(12345);
         etab.name = "kebab test";
         etab.email = "toot@toto.com";
         etab.type = "kebab";
@@ -29,19 +29,15 @@ public class EtabInfoEndPoints {
         EtabInfo etab = ofy().load().type(EtabInfo.class).id(id).now();
         if (etab == null) {
             System.out.println("not found");
+            return null;
         } else {
             System.out.println("account found");
+            return etab;
         }
 
-        etab = new EtabInfo();
-        etab.id = 6554;
-        etab.name = "kebab ggg";
-        etab.email = "toot@toto.com";
-        etab.type = "kebab";
-        return etab;
     }
 
-    @ApiMethod(path = "etab/create", httpMethod = ApiMethod.HttpMethod.POST)
+    @ApiMethod(path = "save", httpMethod = ApiMethod.HttpMethod.POST)
     public EtabInfo createAccount(EtabInfo etab) {
         ObjectifyLoader.loadEntity();
 
